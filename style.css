@@ -117,6 +117,10 @@ section p{
 
 }
 
+section a{
+  margin-left: 25%;
+}
+
 hr {
   background-color: rgb(125, 249, 255);
   border: none;
@@ -124,6 +128,9 @@ hr {
   margin-left: 25%;
   margin-right: 25%;
 }
+
+
+
 
 
 
