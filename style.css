@@ -40,17 +40,18 @@ ul li.active a{
   color: rgb(24, 14, 43)
 }
 
-p{
-  color:rgb(125, 249, 255)
-}
 
 h3{
   color:rgb(182, 208, 226)
 }
 
 .main{
-  max-width: 1200px;
-  margin:auto;
+  /* max-width: 1200px;
+  margin:auto; */
+  background-color: rgb(24, 14, 43);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .circle{
@@ -64,7 +65,10 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.circle p{
+  color: rgb(125, 249, 255);
 }
 
 .title{
@@ -89,3 +93,30 @@ h3{
   font-size: 20px;
   margin-top: 30px;
 }
+
+
+
+section h3{
+  margin-left: 25%;
+}
+
+section p{
+  color: rgb(182, 208, 226);
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  line-height: 2;
+
+}
+
+hr {
+  background-color: rgb(125, 249, 255);
+  border: none;
+  height: 1px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+
+
