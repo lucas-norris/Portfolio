@@ -106,6 +106,7 @@ section{
 
 section h3{
   margin-left: 25%;
+  font-size: 40px;
 }
 
 section p{
@@ -117,16 +118,22 @@ section p{
 
 }
 
-section a{
+/* section a{
   margin-left: 25%;
-}
+} */
 
 hr {
   background-color: rgb(125, 249, 255);
   border: none;
   height: 1px;
   margin-left: 25%;
-  margin-right: 25%;
+  margin-right: 50%;
+}
+
+.social{
+  margin-left: 25%;
+  display: flex;
+  gap: 20%;
 }
 
 
