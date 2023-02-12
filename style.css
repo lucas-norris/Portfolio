@@ -60,6 +60,10 @@ h3{
   color:rgb(182, 208, 226)
 }
 
+h4{
+  color:rgb(125, 249, 255)
+}
+
 /* .main{
   /* max-width: 1200px;
   margin:auto; */
@@ -68,6 +72,8 @@ h3{
   background-size: cover;
   background-position: center;
 } */ 
+
+
 
 .circle{
   float: left;
@@ -139,6 +145,8 @@ section p{
 
 }
 
+
+
 /* section a{
   margin-left: 25%;
 } */
@@ -159,6 +167,42 @@ hr {
 
 
 
+.project-image{
+
+}
+
+.project-title{
+  background-color: transparent;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.project-title h4{
+display: flex;
+justify-content: flex-end;
+}
+
+
+.project-description{
+  background-color: #002244;
+  padding: 20px 0px;
+  box-shadow: none;
+  z-index: 2;
+  margin-left: 40%;
+  margin-top: 3%
+}
+
+.projects-tech{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects-links{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25%;
+  gap: 20px;
+}
 
 
 
