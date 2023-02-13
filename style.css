@@ -167,14 +167,19 @@ hr {
 
 
 
-.project-image{
-
+img{
+  max-width: 30%;
+  height: auto;
+  margin-top: 10px;
+  z-index: 0;
+  display: inline;
 }
 
 .project-title{
   background-color: transparent;
   margin-left: 25%;
   margin-right: 25%;
+  z-index: 2;
 }
 
 .project-title h4{
@@ -185,11 +190,10 @@ justify-content: flex-end;
 
 .project-description{
   background-color: #002244;
+  width: 200%;
   padding: 20px 0px;
   box-shadow: none;
-  z-index: 2;
-  margin-left: 40%;
-  margin-top: 3%
+  margin-top: 3%;
 }
 
 .projects-tech{
@@ -204,6 +208,13 @@ justify-content: flex-end;
   gap: 20px;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 15%;
+}
 
 
 
