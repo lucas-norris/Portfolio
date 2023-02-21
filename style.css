@@ -4,12 +4,20 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 header{
   background-color: rgb(24, 14, 43);
   height: 100vh;
   background-size: cover;
   background-position: center;
 
+}
+
+.nav-up {
+  top: -40px;
 }
 
 footer{
@@ -31,6 +39,10 @@ ul{
   list-style-type: none;
   margin-top: 35px;
   margin-right: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: top 0.2s ease-in-out;
 }
 
 ul li{
@@ -182,10 +194,6 @@ img{
   z-index: 2;
 }
 
-.project-title h4{
-display: flex;
-justify-content: flex-end;
-}
 
 
 .project-description{
@@ -208,17 +216,26 @@ justify-content: flex-end;
   gap: 20px;
 }
 
-.container{
+.projects-tech-1{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 25%;
-  margin-right: 15%;
+  justify-content: flex-start;
 }
 
-html{
-  scroll-behavior: smooth;
+.projects-links-1{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25%;
+  gap: 20px;
 }
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2);
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
 
 
 
