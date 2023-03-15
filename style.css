@@ -230,6 +230,11 @@ hr {
   font-weight: 400;
 }
 
+.project-title{
+  margin: 0px 0px 20px
+
+}
+
   .project-title a{
   color: rgb(182, 208, 226);
   
