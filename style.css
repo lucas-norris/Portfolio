@@ -11,7 +11,7 @@ html{
 
 header{
   background-color: rgb(24, 14, 43);
-  height: 100vh;
+  height: 100dvh;
   background-size: cover;
   background-position: center;
 
@@ -279,6 +279,12 @@ hr {
 .project-image .img {
   border-radius: 4px;
   mix-blend-mode: multiply;
+}
+
+.social{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10dvh;
 }
 
 
