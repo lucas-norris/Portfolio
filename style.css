@@ -252,7 +252,6 @@ hr {
 }
  .project-tech-list {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
@@ -262,6 +261,11 @@ hr {
   color: rgb(125, 249, 255);
   background: transparent;
   
+}
+
+ .project-tech-list li {
+  margin: 0px 20px 5px 0px;
+  white-space: nowrap;
 }
 
  .project-links {
