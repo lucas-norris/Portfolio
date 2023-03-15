@@ -91,7 +91,9 @@ h4{
   background-position: center;
 } */ 
 
-
+a {
+  text-decoration: none;
+}
 
 .circle{
   float: left;
@@ -194,6 +196,7 @@ hr {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+   height: 100dvh; 
 }
 
 .featured-project{
@@ -203,6 +206,7 @@ hr {
   grid-template-columns: repeat(11, 1fr);
   -webkit-box-align: center;
   align-items: center;
+  padding-top: 10dvh;
 }
 
  .project-content{
@@ -228,6 +232,7 @@ hr {
 
   .project-title a{
   color: rgb(182, 208, 226);
+  
 }
 
 .project-title a:hover, a:active{
@@ -255,6 +260,7 @@ hr {
   padding: 0px;
   list-style: none;
   color: rgb(125, 249, 255);
+  background: transparent;
   
 }
 
@@ -266,6 +272,15 @@ hr {
   margin-top: 10px;
   margin-left: -10px;
   color: rgb(182, 208, 226);
+}
+
+.project-links a {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .project-image {
