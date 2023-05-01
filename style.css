@@ -1,3 +1,27 @@
+@media (max-width: 767px) {
+  /* CSS styles for mobile devices */
+  /* prioritize a clean and simple layout with easy-to-tap buttons and large, legible text. You may need to reduce font sizes, adjust margins and padding, and hide or rearrange certain elements. Consider using a responsive grid system to ensure that your content is displayed in a logical order on smaller screens. */
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for tablets */
+  /* increase font sizes and line heights, add more whitespace between elements, and display more content in a two-column or three-column layout. */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* CSS styles for small desktop screens */
+  /* increase the width of your main content area, add more columns, or display more content side-by-side. You might also increase font sizes and line heights for easier reading. */
+}
+
+@media (min-width: 1200px) {
+  /* CSS styles for large desktop screens */
+  /* increase the size of your header and footer areas, add more whitespace between elements, and display content in a wider layout. You might also adjust typography and spacing to take advantage of the larger screen size. */
+}
+
+
+
+
 *{
   margin: 0;
   background-color: rgb(24, 14, 43);
@@ -207,19 +231,13 @@ hr {
   -webkit-box-align: center;
   align-items: center;
   padding-top: 10dvh;
+  
 }
 
  .project-content{
   position: relative;
-  grid-area: 1 / 1 / -1 / 7
-  /* display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  height: 100%;
-  grid-column: 1 / -1;
-  padding: 40px 40px 30px;
-  z-index: 5; */
+  grid-area: 1 / 1 / -1 / 7;
+  
 }
 
  .project-overline{
@@ -309,6 +327,46 @@ hr {
   display: flex;
   justify-content: space-around;
   padding-top: 10dvh;
+}
+
+/* ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25rem;
+}
+
+.project__img-box {
+  position: relative;
+  width: 50%;
+}
+
+.project__text {
+  position: absolute;
+  flex: 1 1 50%;
+  text-align: right;
+} */
+/* 
+.featured-project:nth-of-type(even) {
+  grid-direction: row-reverse;
+} */
+
+.project-content:nth-of-type(even) {
+  grid-column: 2;
+}
+
+.featured-project:nth-of-type(even) .project__text {
+  text-align: left;
 }
 
 
