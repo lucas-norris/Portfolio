@@ -1,180 +1,363 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <a name="top"></a>
-    <header >
-        <div class="circle">
-          <p >L</p>
-        </div>
-        <ul class="nav-down">
-          <li ><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul> 
-      </header>
-  <div class="main">
-
-    <div class="title">
-      <p>Hi, my name is </p>
-      <h1>Lucas Norris.</h1>
-      <h2>I enjoy web development.</h2>
-      <p>I'm a software engineer with a background in digital marketing and e-commerce. I'm currently working on small projects to learn new technologies and <span style="color: rgb(125, 249, 255);">continuously improve</span>. </p>
-    </div>
-    <section class="main-section">
-      <a name="about" id="about"></a>
-      <h3>About Me:</h3>
-      <hr>
-      <p class="text">
-        Hello! My web journey began back in 2019 when I started managing a number of e-commerce sites. I mainly worked on SEO and digital marketing, this led to an opportunity to create a couple of e-commerce sites from scratch.
-      </p>
-        
-      <p class="text">
-        I learned a lot about Magento and Shopify and was introduced to code for the first time. I dabbled in a bit of HTML and CSS and was surprised by the power of code. This piqued my interest, and when the Dev Academy opportunity came along I knew had to jump at the chance.
-      </p>
-      <p class="text">
-        I'm so glad I took the leap, and know that changing careers was definitely the right choice for me. I'm curious and excited for the future, and getting more passionate about software development every day.
-      </p>
-    </section>
-
-    <section id="projects">
-      <a name="projects" id="projects"></a>
-      <h2 class="numbered-heading">Projects:</h2>
-      <hr>
-      <ul class="featured-projects">
-        <li class="featured-project" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
-          <div class="project-content">
-            <div>
-              <p class="project-overline">Featured Project</p>
-              <h3 class="project-title">
-                <a href="https://game-of-life-lucas.netlify.app/" target="_blank">Game of Life</a>
-              </h3>
-              <p class="project-description">
-                Conways Game of Life
-              </p>
-            </div>
-            <ul class="project-tech-list">
-              <li>VS code</li>
-              <li>React</li>
-              <li>Javascript</li>
-              <li>CSS</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/lucas-norris/game-of-life" target="_blank"><i class="fa fa-github" style="font-size:24px;color: rgb(125, 249, 255)"></i>
-              </a>
-              <a href="https://game-of-life-lucas.netlify.app/" target="_blank"><i class="fa fa-external-link" style="font-size:24px;color: rgb(125, 249, 255)"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-image">
-            <a href="https://game-of-life-lucas.netlify.app/" target="_blank">
-              <div class="image-wrapper">
-                <div style="max-width: 700px; display: block;">
-                  <img alt role="presentation" aria-hidden="true" src="img/game-of-life.png" style="max-width: 100%; display: block; position: static;">
-                </div>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="featured-project" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
-          <div class="project-content">
-            <div>
-              <p class="project-overline">Featured Project</p>
-              <h3 class="project-title">
-                <a href="https://pomodoro-timer-focus.netlify.app" target="_blank">Pomodoro Timer</a>
-              </h3>
-              <p class="project-description">
-                Pomodoro timer built with React. Fully adjustable timer for break and work.
-              </p>
-            </div>
-            <ul class="project-tech-list">
-              <li>VS code</li>
-              <li>React</li>
-              <li>Javascript</li>
-              <li>CSS</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/lucas-norris/Pomodoro-timer" target="_blank"><i class="fa fa-github" style="font-size:24px;color: rgb(125, 249, 255)"></i>
-              </a>
-              <a href="https://pomodoro-timer-focus.netlify.app" target="_blank"><i class="fa fa-external-link" style="font-size:24px;color: rgb(125, 249, 255)"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-image">
-            <a href="https://pomodoro-timer-focus.netlify.app" target="_blank">
-              <div class="image-wrapper">
-                <div style="max-width: 700px; display: block;">
-                  <img alt role="presentation" aria-hidden="true" src="img/pomodoro-timer.png" style="max-width: 100%; display: block; position: static;">
-                </div>
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="featured-project" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;">
-          <div class="project-content">
-            <div>
-              <p class="project-overline">Featured Project</p>
-              <h3 class="project-title">
-                <a href="https://solar-system-project-3d.netlify.app" target="_blank">Solar System</a>
-              </h3>
-              <p class="project-description">
-                3D model of the solar system built with Three.js and React Three Fiber.
-              </p>
-            </div>
-            <ul class="project-tech-list">
-              <li>VS code</li>
-              <li>Three.js</li>
-              <li>React Three Fiber</li>
-              <li>Javascript</li>
-              <li>CSS</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/lucas-norris/Solar-System" target="_blank"><i class="fa fa-github" style="font-size:24px;color: rgb(125, 249, 255)"></i>
-              </a>
-              <a href="https://solar-system-project-3d.netlify.app" target="_blank"><i class="fa fa-external-link" style="font-size:24px;color: rgb(125, 249, 255)"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-image">
-            <a href="https://solar-system-project-3d.netlify.app" target="_blank">
-              <div class="image-wrapper">
-                <div style="max-width: 700px; display: block;">
-                  <img alt role="presentation" aria-hidden="true" src="img/solar-system.png" style="max-width: 100%; display: block; position: static;">
-                </div>
-              </div>
-            </a>
-          </div>
-        </li>
+    <nav class="nav-down">
+      <div class="circle">
+        <p>L</p>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      
-        
+    </nav>
+    <header>
+      <div class="title">
+        <p>Hi, my name is</p>
+        <h1>Lucas Norris.</h1>
+        <h2>I enjoy web development.</h2>
+        <p>
+          I'm a software engineer with a background in digital marketing and
+          e-commerce. I'm currently working on small projects to learn new
+          technologies and
+          <span style="color: rgb(125, 249, 255)">continuously improve</span>.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">  
+        <a name="about" id="about"></a>
+        <h3>About Me:</h3>
+        <hr />
+        <p class="text">
+          Hello! My web journey began back in 2019 when I started managing a
+          number of e-commerce sites. I mainly worked on SEO and digital
+          marketing, this led to an opportunity to create a couple of e-commerce
+          sites from scratch.
+        </p>
 
-        
-          
-      
-    </section>
-    <section class="contact-section">
-      <a name="contact" id="contact"></a>
-      <h3>Get In Touch:</h3>
-      <hr>
-      <p class="text">If you want to get in contact or just wish to check out my socials, check out the links below.</p>
-      <div class="social">
-        <a href="https://nz.linkedin.com/in/lucas-norris?" target="_blank"><i class="fa fa-linkedin-square" style="font-size:60px;color:rgb(125, 249, 255);" ></i></a>
-        <a href="https://github.com/lucas-norris" target="_blank"><i class="fa fa-github" style="font-size:60px;color:rgb(125, 249, 255)"></i></a>
-        <a href="mailto: luke.norris22@gmail.com"><i class="fa fa-envelope" style="font-size:60px;color:rgb(125, 249, 255)"></i></a>
-      </div>
-              
-    </section>
-    
-      </div>
+        <p class="text">
+          I learned a lot about Magento and Shopify and was introduced to code
+          for the first time. I dabbled in a bit of HTML and CSS and was
+          surprised by the power of code. This piqued my interest, and when the
+          Dev Academy opportunity came along I knew had to jump at the chance.
+        </p>
+        <p class="text">
+          I'm so glad I took the leap, and know that changing careers was
+          definitely the right choice for me. I'm curious and excited for the
+          future, and getting more passionate about software development every
+          day.
+        </p>
+      </section>
+
+      <section id="projects">
+        <a name="projects" id="projects"></a>
+        <h2 class="numbered-heading">Projects:</h2>
+        <hr />
+        <ul class="featured-projects">
+          <li
+            class="featured-project"
+            style="
+              visibility: visible;
+              opacity: 1;
+              transform: matrix3d(
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              );
+              transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+                transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+            "
+          >
+            <div class="project-content">
+              <div>
+                <p class="project-overline">Featured Project</p>
+                <h3 class="project-title">
+                  <a
+                    href="https://game-of-life-lucas.netlify.app/"
+                    target="_blank"
+                    >Game of Life</a
+                  >
+                </h3>
+                <p class="project-description">Conways Game of Life</p>
+              </div>
+              <ul class="project-tech-list">
+                <li>VS code</li>
+                <li>React</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lucas-norris/game-of-life"
+                  target="_blank"
+                  ><i
+                    class="fa fa-github"
+                    style="font-size: 24px; color: rgb(125, 249, 255)"
+                  ></i>
+                </a>
+                <a
+                  href="https://game-of-life-lucas.netlify.app/"
+                  target="_blank"
+                  ><i
+                    class="fa fa-external-link"
+                    style="font-size: 24px; color: rgb(125, 249, 255)"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://game-of-life-lucas.netlify.app/" target="_blank">
+                <div class="image-wrapper">
+                  <div style="max-width: 700px; display: block">
+                    <img
+                      alt
+                      role="presentation"
+                      aria-hidden="true"
+                      src="img/game-of-life.png"
+                      style="max-width: 100%; display: block; position: static"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li
+            class="featured-project"
+            style="
+              visibility: visible;
+              opacity: 1;
+              transform: matrix3d(
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              );
+              transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+                transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+            "
+          >
+            <div class="project-content">
+              <div>
+                <p class="project-overline">Featured Project</p>
+                <h3 class="project-title">
+                  <a
+                    href="https://pomodoro-timer-focus.netlify.app"
+                    target="_blank"
+                    >Pomodoro Timer</a
+                  >
+                </h3>
+                <p class="project-description">
+                  Pomodoro timer built with React. Fully adjustable timer for
+                  break and work.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>VS code</li>
+                <li>React</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lucas-norris/Pomodoro-timer"
+                  target="_blank"
+                  ><i
+                    class="fa fa-github"
+                    style="font-size: 24px; color: rgb(125, 249, 255)"
+                  ></i>
+                </a>
+                <a
+                  href="https://pomodoro-timer-focus.netlify.app"
+                  target="_blank"
+                  ><i
+                    class="fa fa-external-link"
+                    style="font-size: 24px; color: rgb(125, 249, 255)"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a
+                href="https://pomodoro-timer-focus.netlify.app"
+                target="_blank"
+              >
+                <div class="image-wrapper">
+                  <div style="max-width: 700px; display: block">
+                    <img
+                      alt
+                      role="presentation"
+                      aria-hidden="true"
+                      src="img/pomodoro-timer.png"
+                      style="max-width: 100%; display: block; position: static"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li
+            class="featured-project"
+            style="
+              visibility: visible;
+              opacity: 1;
+              transform: matrix3d(
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              );
+              transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+                transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+            "
+          >
+            <div class="project-content">
+              <div>
+                <p class="project-overline">Featured Project</p>
+                <h3 class="project-title">
+                  <a
+                    href="https://solar-system-project-3d.netlify.app"
+                    target="_blank"
+                    >Solar System</a
+                  >
+                </h3>
+                <p class="project-description">
+                  3D model of the solar system built with Three.js and React
+                  Three Fiber.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>VS code</li>
+                <li>Three.js</li>
+                <li>React Three Fiber</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/lucas-norris/Solar-System"
+                  target="_blank"
+                  ><i
+                    class="fa fa-github"
+                    style="font-size: 24px; color: rgb(125, 249, 255)"
+                  ></i>
+                </a>
+                <a
+                  href="https://solar-system-project-3d.netlify.app"
+                  target="_blank"
+                  ><i
+                    class="fa fa-external-link"
+                    style="font-size: 24px; color: rgb(125, 249, 255)"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a
+                href="https://solar-system-project-3d.netlify.app"
+                target="_blank"
+              >
+                <div class="image-wrapper">
+                  <div style="max-width: 700px; display: block">
+                    <img
+                      alt
+                      role="presentation"
+                      aria-hidden="true"
+                      src="img/solar-system.png"
+                      style="max-width: 100%; display: block; position: static"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="contact-section">
+        <a name="contact" id="contact"></a>
+        <h3>Get In Touch:</h3>
+        <hr />
+        <p class="text">
+          If you want to get in contact or just wish to check out my socials,
+          check out the links below.
+        </p>
+        <div class="social">
+          <a href="https://nz.linkedin.com/in/lucas-norris?" target="_blank"
+            ><i
+              class="fa fa-linkedin-square"
+              style="font-size: 60px; color: rgb(125, 249, 255)"
+            ></i
+          ></a>
+          <a href="https://github.com/lucas-norris" target="_blank"
+            ><i
+              class="fa fa-github"
+              style="font-size: 60px; color: rgb(125, 249, 255)"
+            ></i
+          ></a>
+          <a href="mailto: luke.norris22@gmail.com"
+            ><i
+              class="fa fa-envelope"
+              style="font-size: 60px; color: rgb(125, 249, 255)"
+            ></i
+          ></a>
+        </div>
+      </section>
+    </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./script.js"></script>
   </body>
   <footer>
     <p>Designed & Built By Lucas Norris</p>

@@ -25,60 +25,44 @@
 *{
   margin: 0;
   background-color: rgb(24, 14, 43);
-  padding: 0;
+  padding-top: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  padding-top: 40px;
 }
 
 html{
   scroll-behavior: smooth;
 }
 
-header{
+nav{
   background-color: rgb(24, 14, 43);
-  height: 100dvh;
-  background-size: cover;
-  background-position: center;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 1;
 
 }
 
-.nav-up {
-  top: -40px;
-}
-div{
-  display: block;
-}
-
-footer{
-  background-color: rgb(24, 14, 43);
-  height: 10vh;
-  background-size: cover;
-  background-position: center;
-}
-
-footer p{
-  color: rgb(125, 249, 255);
-  display: flex;
-  justify-content: center;
-}
-
-
-header ul{
+nav ul{
   float: right;
   list-style-type: none;
   margin-top: 35px;
   margin-right: 50px;
-  position: fixed;
   top: 0;
   right: 0;
-  transition: top 0.2s ease-in-out;
   z-index: 1;
 }
 
-header ul li{
+nav ul li{
   display: inline-block;
 }
 
-header ul li a{
+nav ul li a{
   text-decoration: none;
   color: rgb(182, 208, 226);
   padding: 5px 30px;
@@ -86,37 +70,19 @@ header ul li a{
   transition: 0.4s ease;
 }
 
-header ul li a:hover{
+nav ul li a:hover{
   background-color: rgb(240, 255, 255);
   color: rgb(24, 14, 43)
 }
 
-header ul li.active a{
+nav ul li.active a{
   background-color: rgb(240, 255, 255);
   color: rgb(24, 14, 43)
 }
 
 
-h3, h2{
-  color:rgb(182, 208, 226)
-}
-
-
-h4{
-  color:rgb(125, 249, 255)
-}
-
-/* .main{
-  /* max-width: 1200px;
-  margin:auto; */
-  /* background-color: rgb(24, 14, 43);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-} */ 
-
-a {
-  text-decoration: none;
+.nav-up {
+  top: -80px;
 }
 
 .circle{
@@ -135,6 +101,15 @@ a {
 
 .circle p{
   color: rgb(125, 249, 255);
+}
+
+
+
+header{
+  background-color: rgb(24, 14, 43);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .title{
@@ -160,12 +135,62 @@ a {
   margin-top: 30px;
 }
 
-.main-section{
+
+.about{
   background-color: rgb(24, 14, 43);
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
+
+
+div{
+  display: block;
+}
+
+footer{
+  background-color: rgb(24, 14, 43);
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+}
+
+footer p{
+  color: rgb(125, 249, 255);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+h3, h2{
+  color:rgb(182, 208, 226)
+}
+
+
+h4{
+  color:rgb(125, 249, 255)
+}
+
+/* .main{
+  /* max-width: 1200px;
+  margin:auto; */
+  /* background-color: rgb(24, 14, 43);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+} */ 
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 .contact-section{
   background-color: rgb(24, 14, 43);
