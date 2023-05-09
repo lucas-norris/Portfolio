@@ -29,6 +29,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
 body{
   padding-top: 40px;
 }
@@ -304,9 +308,19 @@ hr {
   
 }
 
+.featured-project:nth-of-type(2n+1) .project-tech-list {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
  .project-tech-list li {
   margin: 0px 20px 5px 0px;
   white-space: nowrap;
+  color: rgb(182, 208, 226);
+}
+
+.featured-project:nth-of-type(2n+1) .project-tech-list li {
+  margin: 0px 0px 5px 20px;
 }
 
  .project-links {
@@ -316,7 +330,13 @@ hr {
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
-  color: rgb(182, 208, 226);
+}
+
+.featured-project:nth-of-type(2n+1) .project-links {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-left: 0px;
+  margin-right: -10px;
 }
 
 .project-links a {
@@ -326,7 +346,16 @@ hr {
   -webkit-box-align: center;
   align-items: center;
   padding: 10px;
+  color: rgb(182, 208, 226);
 }
+
+.project-links a:hover, a:active {
+  color: rgb(125, 249, 255);
+}
+
+
+
+
 
 .project-image {
   box-shadow: 0 10px 30px -15px rgb(125, 249, 255);
@@ -337,15 +366,44 @@ hr {
  
 }
 
-.project-image .img {
+
+.project-image :hover{
+  box-shadow: 0 20px 30px -15px rgb(125, 249, 255);
+}
+
+
+
+.featured-project:nth-of-type(2n+1) .project-image {
+  grid-column: 1 / 8;
+}
+
+/* .product-image a{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    vertical-align: middle;
+} */
+
+
+/* .project-image .img {
   border-radius: 4px;
   mix-blend-mode: multiply;
-}
+} */
 
 .social{
   display: flex;
   justify-content: space-around;
   padding-top: 10dvh;
+  font-size: 60px;
+}
+
+.social a{
+  color: rgb(182, 208, 226);
+
+}
+
+.social :hover{
+  color: rgb(125, 249, 255);
 }
 
 /* ul {
@@ -387,9 +445,7 @@ hr {
   text-align: right;
 }
 
-.featured-project:nth-of-type(2n+1) .project-image {
-  grid-column: 1 / 8;
-}
+
 
 .featured-project:not(:last-of-type) {
   margin-bottom: 100px;
