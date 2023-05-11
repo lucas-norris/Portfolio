@@ -41,6 +41,14 @@ html{
   scroll-behavior: smooth;
 }
 
+main {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  /* padding: 200px 150px; */
+}
+
 nav{
   background-color: rgb(24, 14, 43);
   position: fixed;
@@ -177,14 +185,7 @@ h4{
   color:rgb(125, 249, 255)
 }
 
-/* .main{
-  /* max-width: 1200px;
-  margin:auto; */
-  /* background-color: rgb(24, 14, 43);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-} */ 
+
 
 a {
   text-decoration: none;
@@ -246,7 +247,8 @@ hr {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
 }
 
 .featured-project{
@@ -291,7 +293,7 @@ hr {
   z-index: 2;
   padding: 25px;
   border-radius: 4px;
-  background-color: #0c023e;
+  background-color: rgb(30, 13, 55);
   color: rgb(182, 208, 226);
   font-size: 18px;
 }
