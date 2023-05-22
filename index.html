@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
 
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="queries.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,15 +15,45 @@
   </head>
   <body>
     <a name="top"></a>
-    <nav class="nav-down">
+      <nav class="nav-down">
       <div class="circle">
         <p>L</p>
       </div>
+      
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div>
+        <button aria-label="menu" class="hamburger">
+          <div class="ham-box">
+            <div class="ham-box-inner">
+              ::before
+              ::after
+            </div>
+          </div>
+        </button>
+        <aside aria-hidden="true" tabindex="-1" class="menu-sidebar">
+          <nav>
+            <ol>
+              <li>
+                ::before
+                <a href="#about">About</a>
+              </li>
+              <li>
+                ::before
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                ::before
+                <a href="#contact">Contact</a>
+              </li>
+            </ol>
+          </nav>
+        </aside>
+      </div>
     </nav>
     <header>
       <div class="title">
