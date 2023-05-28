@@ -24,40 +24,32 @@ main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  /* padding: 200px 150px; */
 }
 
-nav{
-  /* background-color: rgb(24, 14, 43);
-  position: fixed;
-  height: 80px;
-  top: 0;
-  transition: top 0.2s ease-in-out;
-  width: 100%;
-  z-index: 1; */
-
+.nav-down{
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 12;
-    background-color: rgb(24, 14, 43);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  background-color: rgb(24, 14, 43);
 
 }
 
 nav ul{
-  float: right;
-  list-style-type: none;
-  margin-top: 35px;
-  margin-right: 50px;
-  top: 0;
-  right: 0;
-  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
 
 nav ul li{
-  display: inline-block;
+  margin: 0px 5px;
+  position: relative;
 }
 
 nav ul li a{
@@ -110,14 +102,19 @@ header{
   height: 100vh;
   background-size: cover;
   background-position: center;
+
+  
 }
 
 .title{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0px;
+  line-height: 1.3;
 }
 
 .title h1{
@@ -134,6 +131,8 @@ header{
   color: rgba(182, 208, 226, 0.5);
   font-size: 20px;
   margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 
@@ -142,6 +141,8 @@ header{
   height: 100vh;
   background-size: cover;
   background-position: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 
@@ -204,10 +205,6 @@ section h3{
   font-size: 40px;
 }
 
-.about{
-  margin-left: 20%;
-  margin-right: 20%;
-}
 
 .text{
   color: rgb(182, 208, 226);
@@ -219,29 +216,28 @@ section h3{
 
 
 
-/* section a{
-  margin-left: 25%;
-} */
+
 
 hr {
   background-color: rgb(125, 249, 255);
   border: none;
   height: 1px;
   margin-left: 25%;
-  margin-right: 50%;
+  margin-right: 40%;
 }
 
 
 
 .featured-projects{
-   display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
+  margin-top: 5%;
 }
 
 .featured-project{
@@ -305,7 +301,6 @@ hr {
 }
 
 .featured-project:nth-of-type(2n+1) .project-tech-list {
-  -webkit-box-pack: end;
   justify-content: flex-end;
 }
 
@@ -321,7 +316,6 @@ hr {
 
  .project-links {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   position: relative;
   margin-top: 10px;
@@ -329,7 +323,6 @@ hr {
 }
 
 .featured-project:nth-of-type(2n+1) .project-links {
-  -webkit-box-pack: end;
   justify-content: flex-end;
   margin-left: 0px;
   margin-right: -10px;
@@ -337,9 +330,7 @@ hr {
 
 .project-links a {
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   padding: 10px;
   color: rgb(182, 208, 226);
@@ -373,18 +364,6 @@ hr {
   grid-column: 1 / 8;
 }
 
-/* .product-image a{
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    vertical-align: middle;
-} */
-
-
-/* .project-image .img {
-  border-radius: 4px;
-  mix-blend-mode: multiply;
-} */
 
 .social{
   display: flex;
@@ -402,37 +381,7 @@ hr {
   color: rgb(125, 249, 255);
 }
 
-/* ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
 
-.project {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25rem;
-}
-
-.project__img-box {
-  position: relative;
-  width: 50%;
-}
-
-.project__text {
-  position: absolute;
-  flex: 1 1 50%;
-  text-align: right;
-} */
-/* 
-.featured-project:nth-of-type(even) {
-  grid-direction: row-reverse;
-} */
 
 
 
@@ -493,6 +442,23 @@ ol {
 }
 
 
+.blur {
+  filter: blur(5px) brightness(0.7);
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  pointer-events: none;
+  user-select: none;
+}
+
+.menu-sidebar ol li {
+  position: relative;
+  margin: 0px auto 20px;
+  counter-increment: item 1;
+  font-size: clamp(14px,4vw,18px);
+}
+
+.menu-open{
+  overflow: hidden;
+}
 
 
 
